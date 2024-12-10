@@ -8,6 +8,15 @@
 <body>
     <div class="a">
         <h1>Admin Login</h1>
+        <div class = "container">
+            <form method="post">
+                <input type="text" name="u" placeholder="Username" required="required" />
+                <input type="password" name="p" placeholder="Password" required="required" />
+                <button type="submit" class="btn btn-primary btn-block btn-large">Log In</button>
+        </form>
+        </div>
+
     </div>
+    {% include "includes/footer.html" %}
 </body>
 </html>

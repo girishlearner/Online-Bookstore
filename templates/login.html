@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <div class="a">
+        <h1>User Login</h1>
+        <div class = "container">
+            <form method="post">
+                <input type="text" name="u" placeholder="Username" required="required" />
+                <input type="password" name="p" placeholder="Password" required="required" />
+                <button type="submit" class="btn btn-primary btn-block btn-large">Log In</button>
+        </form>
+        </div>
+
+    </div>
+    {% include "includes/footer.html" %}
+</body>
+</html>

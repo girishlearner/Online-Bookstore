@@ -1,3 +1,53 @@
 .a {
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    margin: 100px;
+}
+body {
+	height: 100%;      /* Make sure the body takes up the full height */
+    margin: 0;         /* Remove any default margin */
+    padding: 0;        /* Remove any default padding */
+    overflow: hidden;
+	font-family: 'Open Sans', sans-serif;
+	background: #092756;
+}
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -150px;
+	width:300px;
+	height:300px;
+}
+
+input {
+	width: 100%;
+	display: block;
+	margin-bottom: 10px;
+	background: rgba(0,0,0,0.3);
+	border: 1px;
+	outline: none;
+	padding: 10px;
+	font-size: 14px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4681f4;
+}
+
+.bottom-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #3d5f94;
+    padding: 10px;
+    text-align: center;
 }
