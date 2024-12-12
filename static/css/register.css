@@ -1,0 +1,62 @@
+/* Register page */
+.regis {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    margin: 50px;
+}
+.reg {
+	height: 100%;      /* Make sure the body takes up the full height */
+    overflow: hidden;
+    margin: 0;                 /* Remove default margin */
+    padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	background: #092756;
+}
+
+.containerRegis{
+     position: absolute;        /* Position the container absolutely */
+    top: 50%;                  /* Position it vertically at the middle */
+    left: 50%;                 /* Position it horizontally at the middle */
+    transform: translate(-50%, -50%); /* Offset by half of its own width and height to center it */
+    width: 50%;                /* Set the width of the container (50% of the viewport or parent element) */
+    padding: 20px;             /* Optional: Add some padding for spacing */
+    box-sizing: border-box;
+}
+
+input {
+	width: 100%;
+	display: block;
+	margin-bottom: 10px;
+	background: rgba(0,0,0,0.3);
+	border: 1px;
+	outline: none;
+	padding: 10px;
+	font-size: 14px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    background-color: #4681f4;
+}
+
+.bottom-container {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   background-color: #3d5f94;
+   text-align: center;
+}
+
+@media (max-width: 768px) {
+    .containerRegis input, .containerRegis button {
+        padding: 12px;
+    }
+}

@@ -4,41 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Page</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Home.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/register.css') }}">
 
 </head>
-<body class="register">
-    <div class="form-container">
-        <h2>Register</h2>
-        <form action="/register" method="post">
-            <div class="form-group">
+<body class="reg">
+    <div class="regis">
+        <h1>Registration Form</h1>
+        <div class = "containerRegis">
+        <form name="register" method="post">
                 <input type="text" id="username" name="username" placeholder="Username" required>
-            </div>
-            <div class="form-group">
                 <input type="text" id="first-name" name="first_name" placeholder="First Name" required>
-            </div>
-            <div class="form-group">
-                <input type="text" id="last-name" name="last_name" placeholder="Last Name" required>
-            </div>
-            <div class="form-group">
+                <input type="text"  id="last-name" name="last_name" placeholder="Last Name" required>
                 <input type="text" id="address" name="address"  placeholder="Address" required>
-            </div>
-            <div class="form-group">
                 <input type="tel" id="phone" name="phone_number" pattern="[0-9]{10}" placeholder="Phone Number" required>
-            </div>
-            <div class="form-group">
                 <input type="password" id="password" name="password" placeholder="Password"  required>
-            </div>
-            <div class="form-group">
                 <input type="password" id="confirm-password" name="confirm_password"  placeholder="Confirm Password" required>
-            </div>
-            <button type="submit" class="register-btn">Register</button>
+                <button type="submit">Register</button>
         </form>
+        </div>
     </div>
-
-    <div class="footer-register">
-        {% include "includes/footer.html" %}
-    </div>
+    {% include "includes/footer.html" %}
 
 </body>
 </html>
