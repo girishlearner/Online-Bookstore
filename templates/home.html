@@ -3,19 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/Home.css') }}">
-
+    <title>Online Bookstore</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Home.css') }}">
 
 </head>
-<body>
-    <div class="homeheading"> <h2>Welcome to BookStore</h2></div>
+<body class="home">
+    <header>
+        <h1>Welcome to the Online Bookstore</h1>
+    </header>
 
-    <br><br>
-     <div class="container">
-        <a href="{{ url_for('admin') }}" class="btn">Admin</a>
-        <a href="{{ url_for('login') }}" class="btn">User Login</a>
-        <a href="{{ url_for('register') }}" class="btn">Register</a>
+    <nav>
+
+        <a href="{{ url_for('admin')}}">Admin</a>
+        <a href="{{ url_for('login')}}">User</a>
+        <a href="{{ url_for('register')}}">Register</a>
+    </nav>
+
+    <div class="container">
+        <h2>About Our Bookstore</h2>
+        <p>
+            Discover a world of stories and knowledge at our Online Bookstore. We offer a vast collection of books across various genres, including fiction, non-fiction, science, history, self-help, and more. Whether you're a casual reader or an avid bookworm, there's something for everyone here.
+        </p>
+        <p>
+            Our mission is to make books accessible to everyone, anytime, anywhere. With just a few clicks, you can explore, purchase, and enjoy books from the comfort of your home. Join our community of readers today and embark on your next literary adventure.
+        </p>
     </div>
+
+    <div class="footer">
+        {% include "includes/footer.html" %}
+    </div>
+
 </body>
 </html>
